@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8A8A842-4896-48F4-A9B1-3A9E3B617BD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryMembers</RootNamespace>
+    <AssemblyName>LibraryMembers</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAdding.cs" />
+    <Compile Include="clsGrideview.cs" />
+    <Compile Include="clsUpdate.cs" />
+    <Compile Include="FirstClass.cs" />
+    <Compile Include="frmBazgashteketab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBazgashteketab.Designer.cs">
+      <DependentUpon>frmBazgashteketab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBedehiPardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBedehiPardakht.Designer.cs">
+      <DependentUpon>frmBedehiPardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBooks.Designer.cs">
+      <DependentUpon>frmBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKarbarejadid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKarbarejadid.Designer.cs">
+      <DependentUpon>frmKarbarejadid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaghveoviiat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaghveoviiat.Designer.cs">
+      <DependentUpon>frmLaghveoviiat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSbj.Designer.cs">
+      <DependentUpon>frmSbj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTahvileketab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTahvileketab.Designer.cs">
+      <DependentUpon>frmTahvileketab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTamdideozviiat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTamdideozviiat.Designer.cs">
+      <DependentUpon>frmTamdideozviiat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTavizepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTavizepassword.Designer.cs">
+      <DependentUpon>frmTavizepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMdiLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMdiLibrary.Designer.cs">
+      <DependentUpon>frmMdiLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTedadeMojazeTahvil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTedadeMojazeTahvil.designer.cs">
+      <DependentUpon>frmTedadeMojazeTahvil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBazgashteketab.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBazgashteketab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBedehiPardakht.resx">
+      <DependentUpon>frmBedehiPardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBooks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKarbarejadid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKarbarejadid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaghveoviiat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLaghveoviiat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSbj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSbj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTahvileketab.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTahvileketab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTamdideozviiat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTamdideozviiat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTavizepassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTavizepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMdiLibrary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMdiLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTedadeMojazeTahvil.resx">
+      <DependentUpon>frmTedadeMojazeTahvil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="clsForCombo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TropicalDream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
